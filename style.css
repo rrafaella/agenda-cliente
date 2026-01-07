@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f1ee;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #e3c1b3, #cfa18d);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.horarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.horarios button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #e8d5cc;
+  cursor: pointer;
+}
+
+.horarios button.ocupado {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.horarios button.selecionado {
+  background: #c28c74;
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #c28c74;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+

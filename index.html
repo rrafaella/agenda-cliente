@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Profissional | Beleza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Agenda Profissional</h1>
+  <p>Agendamento online rápido e prático</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Escolha o dia</h2>
+    <input type="date" id="dia" onchange="carregarHorarios()">
+  </section>
+
+  <section class="card">
+    <h2>Escolha o horário</h2>
+    <div id="horarios" class="horarios"></div>
+  </section>
+
+  <section class="card">
+    <h2>Dados da Cliente</h2>
+    <input type="text" id="nome" placeholder="Nome da cliente">
+    <input type="text" id="servico" placeholder="Serviço">
+    <button onclick="confirmarAgendamento()">Confirmar no WhatsApp</button>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
